@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'inheritance.abstract.apps.AbstractConfig',
     'inheritance.multitable.apps.MultitableConfig',
     'inheritance.proxy.apps.ProxyConfig',
+    'queryset.apps.QuerysetConfig'
 ]
 
 MIDDLEWARE = [

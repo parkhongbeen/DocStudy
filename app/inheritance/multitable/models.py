@@ -18,7 +18,7 @@ class Restaurant1(Place1):
     place1_ptr = models.OneToOneField(Place1, parent_link=True, related_name='restaurant1',
                                       related_query_name='restaurant1_by_oto', on_delete=models.CASCADE)
     near_places = models.ManyToManyField(Place1, related_name='restaurant1_set',
-                                        related_query_name='restaurant1_by_near_places')
+                                         related_query_name='restaurant1_by_near_places')
     hot_dogs = models.BooleanField(default=False)
     pizza = models.BooleanField(default=False)
 
